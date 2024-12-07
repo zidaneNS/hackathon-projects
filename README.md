@@ -22,14 +22,15 @@ food e-commerce websites that have different pages for different roles such as A
 | DATETIME DEFAULT ON UPDATE | VARCHAR | INT FOREIGN KEY |
 
 ## Features
-1. Admin
-Can access dashboard which is :
-* Can do CRUD for products
-* Can delete user with role USER
-* Can manage note
+1. Admin  
+Can access dashboard which is :  
+  * Can do CRUD for products
+  * Can delete user with role USER
+  * Can manage note
 
-2. User
-* Select some products and place the order with format :
+2. User  
+Can access menu page which is :
+* Can select some products and place the order with format :
 ```
 {
   "order": [
@@ -42,7 +43,12 @@ Can access dashboard which is :
   "totalPrice": number
 }
 ```
-* readonly note
+* Filter display menu for selected categories ('FOOD', 'DRINK', 'DESSERT')
 
-3. Guest
+  Can access user page which is :
+* readonly note
+* checklist and delete the note
+
+3. Guest  
+Can access menu page which is :
 * Only read menu and will be ask to sign in/up if selecting any menus
